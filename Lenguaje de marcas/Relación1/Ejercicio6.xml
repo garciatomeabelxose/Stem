@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instituto>
+        <clase>
+            <alumnos>
+                <alumno>
+                    <nombre>Peter</nombre>
+                    <edad>15</edad>
+                    <nota>3.5</nota>
+                </alumno>
+                <alumno>
+                    <nombre>Lucia</nombre>
+                    <edad>15</edad>
+                    <nota>9.5</nota>
+                </alumno>
+                <alumno>
+                    <nombre>Alejandro</nombre>
+                    <edad>16</edad>
+                    <nota>1</nota>
+                </alumno>
+                <alumno>
+                    <nombre>Diego</nombre>
+                    <edad>15</edad>
+                    <nota>10</nota>
+                </alumno>
+            </alumnos>
+        </clase>
+        <clase>
+            <alumnos>
+                <alumno>
+                    <nombre>María</nombre>
+                    <edad>15</edad>
+                    <nota>7</nota>
+                </alumno>
+                <alumno>
+                    <nombre>Lucas</nombre>
+                    <edad>20</edad>
+                    <nota>0.5</nota>
+                </alumno>
+                <alumno>
+                    <nombre>Abel</nombre>
+                    <edad>14</edad>
+                    <nota>10</nota>
+                </alumno>
+                <alumno>
+                    <nombre>Raul</nombre>
+                    <edad>18</edad>
+                    <nota>5</nota>
+                </alumno>
+
+            </alumnos>
+        </clase>
+
+</instituto>

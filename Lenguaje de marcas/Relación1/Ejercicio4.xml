@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recetas>
+    <receta>
+        <nombre>Macarrones boloñesa</nombre>
+        <ingredientes>
+            <ingrediente>
+                <nombre>Carne picada</nombre>
+                <peso>1000g</peso>
+            </ingrediente>
+             <ingrediente>
+                <nombre>Tomate frito</nombre>
+                <peso>1000g</peso>
+            </ingrediente>
+             <ingrediente>
+                <nombre>cebolla</nombre>
+                <peso>50g</peso>
+            </ingrediente>
+             <ingrediente>
+                <nombre>ajo</nombre>
+                <peso>15g</peso>
+            </ingrediente>
+             <ingrediente>
+                <nombre>Oregano</nombre>
+                <peso>10g</peso>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Macarrones</nombre>
+                <peso>1kg</peso>
+            </ingrediente>
+            
+        </ingredientes>
+        <tiempopreparacion>90min</tiempopreparacion>
+    </receta>
+    <receta>
+           <nombre>Espaguetis Carbonara</nombre>
+        <ingredientes>
+            <ingrediente>
+                <nombre>Bacon</nombre>
+                <peso>200g</peso>
+            </ingrediente>
+             <ingrediente>
+                <nombre>Nata de cocinar</nombre>
+                <peso>100g</peso>
+            </ingrediente>
+             <ingrediente>
+                <nombre>cebolla</nombre>
+                <peso>50g</peso>
+            </ingrediente>
+             <ingrediente>
+                <nombre>Pimienta</nombre>
+                <peso>15g</peso>
+            </ingrediente>
+             <ingrediente>
+                <nombre>Sal</nombre>
+                <peso>10g</peso>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Espaguetis</nombre>
+                <peso>500g</peso>
+            </ingrediente>
+            
+        </ingredientes>
+        <tiempopreparacion>30min</tiempopreparacion>
+    </receta>    
+</recetas>
