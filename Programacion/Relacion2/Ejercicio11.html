@@ -1,0 +1,16 @@
+<script>   
+
+let tiempoDado=parseInt(prompt("Introduzca un tiempo en segundos"))
+
+let restoTiempoS=tiempoDado%60
+let tiempoSegundos=tiempoDado-(restotiempoS)
+
+let restoTiempoM=(tiempoSegundos*60)%60
+let tiempoMinutos=(tiempoSegundos)-restotiempoM
+
+let restoTiempoH=(tiempoMinutos*60)%60
+let tiempoHoras=(tiempoMinutos)-restoTiempoH
+
+console.log(tiempoHoras+"H "+tiempoMinutos+"minutos "+tiempoSegundos+"segundos");
+
+</script>

@@ -1,10 +1,9 @@
 <script>
     //recojo datos y añado variables
     let edad = parseInt(prompt("¿Cuántos años tienes?"))
-    let resto = 80
-    let dias = 365
-    //hago el calculo
-    let calculo = ((resto - edad) * dias)
-    console.log("Te quedan " + calculo + " días para tener 80 años");
+    const RestoEdadOchenta = 80 * 365
+    //hago el calculoTiempoRest
+    let calculoTiempoRest = RestoEdadOchenta - edad
+    console.log("Te quedan " + calculoTiempoRest + " días para tener 80 años");
 
 </script>

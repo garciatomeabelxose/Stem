@@ -1,0 +1,11 @@
+<script>
+    //recojo variables
+    let tiempoDado = parseInt(prompt("¿Cuanto tiempo en minutos desea calcular?"))
+    //calculo el resto, se lo resto al total y lo divido entre 60 para saber las h
+    let restoconversor = tiempoDado % 60
+    let conversorAHora = (tiempoDado - restoconversor) / 60
+    //lo mando a consola
+    console.log(conversorAHora + "H y " + restoconversor + "minutos");
+
+
+</script>
