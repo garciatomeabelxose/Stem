@@ -1,0 +1,15 @@
+<script>
+    //Recojo variables
+    let numeroDosCifras = (prompt("Dame un numero de dos cifras"))
+    //comparo si es menor que 10
+    if (parseInt(numeroDosCifras) >= 10 && parseInt(numeroDosCifras) <= 100) {
+        sumaNumero = parseInt(numeroDosCifras.charAt(0)) + parseInt(numeroDosCifras.charAt(1))
+        console.log(sumaNumero)
+    }
+    //si es menor se avisa al usuario
+    else {
+        console.log("El numero introducido no es de 2 cifras");
+
+    }
+
+</script>
