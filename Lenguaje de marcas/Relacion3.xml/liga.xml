@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga SYSTEM "liga.dtd">
+<liga>
+    <entrenador>
+        <nombre>Rojo</nombre>
+        <pokemon>
+            <nombre>Rhydon</nombre>
+            <tipo>Roca</tipo>
+            <tipo>Tierra</tipo>
+            <nivel>60</nivel>
+        </pokemon>
+        <pokemon>
+            <nombre>Gengar</nombre>
+            <tipo>Fantasma</tipo>
+            <tipo>Veneno</tipo>
+            <nivel>62</nivel>
+        </pokemon>
+    </entrenador>
+        <entrenador>
+        <nombre>Azul</nombre>
+        <pokemon>
+            <nombre>Charizard</nombre>
+            <tipo>Fuego</tipo>
+            <tipo>Volador</tipo>
+            <nivel>65</nivel>
+        </pokemon>
+        <pokemon>
+            <nombre>Dragonite</nombre>
+            <tipo>Dragon</tipo>
+            <tipo>Volador</tipo>
+            <nivel>67</nivel>
+        </pokemon>
+    </entrenador>
+
+
+</liga>
