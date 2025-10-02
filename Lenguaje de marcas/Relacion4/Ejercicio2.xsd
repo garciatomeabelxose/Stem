@@ -19,13 +19,16 @@
                                         <xs:element name="email">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string">
-                                                    <xs:maxLength value="100" />
+                                                    <xs:pattern
+                                                        value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
                                                 </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>
                                         <xs:element name="telefono">
                                             <xs:simpleType>
-                                                <xs:restriction base="xs:string"/>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value=""></xs:pattern>
+                                                </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>
                                     </xs:sequence>
@@ -70,7 +73,7 @@
                                 </xs:simpleType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="codigo" type="xs:string"/>
+                        <xs:attribute name="codigo" type="xs:string" />
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
