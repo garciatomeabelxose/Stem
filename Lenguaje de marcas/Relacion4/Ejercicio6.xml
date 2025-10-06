@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="Ejercicio6.xsd">
+  <producto>
+    <id>1234</id>
+    <nombre>Cables</nombre>
+    <categoria></categoria>
+    <precio>19.99</precio>
+    <stock>true</stock>
+    <proveedor>
+        <nombre>Miguel</nombre>
+        <telefono>666574841</telefono>
+        <pais>Francia</pais>
+    </proveedor>
+  </producto>
+</inventario>
