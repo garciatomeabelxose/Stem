@@ -23,13 +23,18 @@
                             <xs:element name="categoria">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Periferico"></xs:enumeration>
+                                        <xs:enumeration value="Ordenador"></xs:enumeration>
+                                        <xs:enumeration value="Movil"></xs:enumeration>
+                                        <xs:enumeration value="Accesorio"></xs:enumeration>
 
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="precio" >
+                            <xs:element name="precio">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:float">
+                                        <xs:pattern value="`\d+\.\d{2}`"></xs:pattern>
 
                                     </xs:restriction>
                                 </xs:simpleType>
@@ -54,14 +59,14 @@
                                         <xs:element name="telefono">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string">
-
+                                                    <xs:pattern value="\d{3}-\d{3}-\d{3}"></xs:pattern>
                                                 </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>
                                         <xs:element name="pais">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string">
-
+                                                    <xs:pattern value="[A-Z].*"></xs:pattern>
                                                 </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>

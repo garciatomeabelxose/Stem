@@ -4,12 +4,12 @@
   <producto>
     <id>1234</id>
     <nombre>Cables</nombre>
-    <categoria></categoria>
+    <categoria>Periferico</categoria>
     <precio>19.99</precio>
     <stock>true</stock>
     <proveedor>
         <nombre>Miguel</nombre>
-        <telefono>666574841</telefono>
+        <telefono>666-574-841</telefono>
         <pais>Francia</pais>
     </proveedor>
   </producto>
