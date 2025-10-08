@@ -1,0 +1,30 @@
+<script>
+
+    let numEnt = parseInt(prompt("Dame un número entero"))
+    let piramideString = "**"
+    let piramideWhrite = " "
+    let fila = ""
+    let espacios = ""
+    let asteriscos = ""
+    for (let i = 0; i < numEnt; i++) {
+        //asteriscos
+
+        asteriscos += piramideString
+        espacios = ""
+        for (let j = 0; j < numEnt - i - 1; j++) {
+            //espacios
+            espacios += piramideWhrite
+        }
+
+        //fila = espacios+asteriscos
+        fila = espacios + asteriscos
+        console.log(fila);
+
+    }
+
+
+
+
+
+
+</script>
