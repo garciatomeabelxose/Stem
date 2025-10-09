@@ -1,0 +1,9 @@
+<!ELEMENT ligaDeCohetes (grupo)>
+<!ELEMENT grupo (jugadores)>
+<!ELEMENT jugadores (jugador+)>
+<!ELEMENT jugador (coche,dinero,pass)>
+<!ELEMENT coche (tipo,color)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT dinero (#PCDATA)>
+<!ELEMENT pass (#PCDATA)>

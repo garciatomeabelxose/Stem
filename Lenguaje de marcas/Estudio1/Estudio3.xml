@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaDeCohetes SYSTEM "estudio3.dtd">
+<ligaDeCohetes>
+    <grupo>
+        <jugadores>
+            <jugador>
+                <coche>
+                    <tipo>deportivo</tipo>
+                    <color>rojo</color>
+                </coche>
+                <dinero></dinero>
+                <pass></pass>
+            </jugador>
+        </jugadores>
+    </grupo>
+</ligaDeCohetes>
