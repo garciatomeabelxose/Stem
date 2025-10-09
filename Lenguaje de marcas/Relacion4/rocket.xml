@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ligaDeCohetes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="rocket.xsd">
+<grupo codigo="GRUPO001">
+    <jugadores>
+        <jugador>
+            <coche>
+                  <color>rojo</color>
+                <tipoDeCoche>deportivo</tipoDeCoche>
+              
+                <acelerador>5.00</acelerador>
+                <celebracion>vuelo</celebracion>
+            </coche>
+            <rango>bronze</rango>
+            <dinero>10</dinero>
+            <pass>true</pass>
+        </jugador>
+    </jugadores>
+</grupo>
+</ligaDeCohetes>
