@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaDeCohetes [
+    <!ELEMENT ligaDeCohetes (grupo)>
+    <!ELEMENT grupo (jugadores)>
+    <!ELEMENT jugadores (jugador+)>
+    <!ELEMENT jugador (coche+,rango+,pass)>
+    <!ELEMENT coche (color,tipo,acelerador,celebracion)>
+    <!ELEMENT rango (#PCDATA)>
+    <!ELEMENT pass (#PCDATA)>
+    <!ELEMENT color (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT acelerador (#PCDATA)>
+    <!ELEMENT celebracion (#PCDATA)>
+]>
+
+<ligaDeCohetes>
+    <grupo>
+        <jugadores>
+            <jugador>
+                <coche>
+                    <color>rojo</color>
+                    <tipo>deportivo</tipo>
+                    <acelerador>5</acelerador>
+                    <celebracion>vuelo</celebracion>
+                </coche>
+                <rango>bronze</rango>
+                <pass>true</pass>
+            </jugador>
+             <jugador>
+                <coche>
+                    <color>verde</color>
+                    <tipo>deportivo</tipo>
+                    <acelerador>5</acelerador>
+                    <celebracion>vuelo</celebracion>
+                </coche>
+                <rango>bronze</rango>
+                <pass>true</pass>
+            </jugador>
+        </jugadores>
+    </grupo>
+</ligaDeCohetes>
