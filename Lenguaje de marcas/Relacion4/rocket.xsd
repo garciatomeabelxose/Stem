@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="ligaDeCohetes">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="grupo">
+          <xs:complexType>
+           
+            <xs:sequence>
+
+              <xs:element name="jugadores">
+                <xs:complexType>
+                  <xs:sequence>
+
+                    <xs:element name="jugador" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+
+                          <xs:element name="coche">
+                            <xs:complexType>
+                              <xs:sequence>
+
+                                
+                                <xs:element name="color">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:enumeration value="rojo"/>
+                                      <xs:enumeration value="azul"/>
+                                      <xs:enumeration value="verde"/>
+                                      <xs:enumeration value="negro"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+
+                               
+                                <xs:element name="tipoDeCoche">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:enumeration value="deportivo"/>
+                                      <xs:enumeration value="familiar"/>
+                                      <xs:enumeration value="todoterreno"/>
+                                      <xs:enumeration value="clasico"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+
+                           
+                                <xs:element name="acelerador">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:minLength value="3"/>
+                                      <xs:maxLength value="15"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+
+                                
+                                <xs:element name="celebracion">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:enumeration value="vuelo"/>
+                                      <xs:enumeration value="salto"/>
+                                      <xs:enumeration value="bailar"/>
+                                      <xs:enumeration value="grito"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+
+                    
+                          <xs:element name="rango">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="bronze"/>
+                                <xs:enumeration value="silver"/>
+                                <xs:enumeration value="gold"/>
+                                <xs:enumeration value="platino"/>
+                                <xs:enumeration value="diamante"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+
+                         
+                          <xs:element name="dinero">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:decimal">
+                                <xs:minInclusive value="0"/>
+                                <xs:maxInclusive value="10000"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+
+                          <xs:element name="pass" type="xs:boolean"/>
+
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+             <xs:attribute name="codigo" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
