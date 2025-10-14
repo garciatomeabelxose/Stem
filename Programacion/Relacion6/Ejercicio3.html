@@ -1,0 +1,21 @@
+<script>
+
+    let precioTotal = 0
+    let contador = 1
+    let cierre = 2
+    while (cierre != 0) {
+
+        producto = Number(prompt("Precio del producto " + contador))
+        precioTotal += producto
+        cierre = Number(prompt("introduzca 0 si desea dejar de añadir productos, sino presione cualquier tecla"))
+        contador++
+
+    }
+    let propina = Number(prompt("¿Cuánta propina quieres dejar?")) / 100
+    let numPersonas = Number(prompt("¿Cúantas personas sois?"))
+    console.log("Total sin propina:" + precioTotal + "€");
+    console.log("Total con propina:" + precioTotal + (precioTotal * propina) + "€");
+    console.log("Precio por cabeza: " + (precioTotal + (precioTotal * propina)) / numPersonas + "€");
+
+
+</script>

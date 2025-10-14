@@ -1,0 +1,17 @@
+<script>
+
+    let saldoInicial = 1000
+    let saldoTotal = saldoInicial
+    while (saldoTotal != 0) {
+        console.log("Saldo: " + saldoTotal)
+        let saldoRetirar = Number(prompt("Introduzca saldo a retirar:"));
+        saldoTotal -= saldoRetirar
+        if (saldoTotal < 0) {
+            console.log("Saldo insuficiente.");
+
+            saldoTotal += saldoRetirar
+        }
+    }
+    console.log("Te has quedado sin saldo ¡A trabajar!");
+
+</script>

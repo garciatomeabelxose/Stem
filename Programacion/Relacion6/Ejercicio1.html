@@ -1,0 +1,20 @@
+<script>
+    let calificacion = 0.00;
+    let cierre = 0
+    let suspensos = 0
+    let aprobados = 0
+    let numAlu = 1
+    while (cierre != -1) {
+        
+         let calificacionAlumno = parseFloat(prompt("introduce la calificacion del alumno "+numAlu))
+        calificacion += calificacionAlumno
+        cierre = parseInt(prompt("introduzca -1 si desea ha terminado de añadir alumnos sino introduzca cualquier numero"))
+
+        if (calificacionAlumno >= 5) { aprobados ++ }
+        else if (calificacionAlumno < 5) { suspensos ++ }
+        numAlu++
+    }
+    console.log("Hay " + aprobados + " alumnos aprobados y " + suspensos + " alumnos suspensos.La calificación media es: " + calificacion /numAlu );
+
+
+</script>
