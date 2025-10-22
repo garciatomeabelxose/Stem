@@ -1,9 +1,7 @@
 <script>
-
-let numeros=[100,200,300]
-let temporal=numeros[2]
-numeros[3](numeros.shift())
-numeros.unshift(temporal)
-console.log(numeros);
-
+  let numeros = [100, 200, 300];
+  let temporal = numeros[2];
+  numeros[2] = numeros[0];
+  numeros[0] = temporal;
+  console.log(numeros);
 </script>
