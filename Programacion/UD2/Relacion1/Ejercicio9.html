@@ -1,7 +1,13 @@
 <script>
+  let cola = [];
+  cola.push("cliente1", "cliente2", "cliente3");
+  console.log(cola);
 
-let cola=[]
-cola.push("cliente1","cliente2","cliente3")
-
-
+  let clienteAtendido = cola.shift();
+  console.log(clienteAtendido);
+  console.log(cola);
+  clienteAtendido = cola.shift();
+  console.log(clienteAtendido);
+  console.log(cola);
+  clienteAtendido = cola.shift();
 </script>

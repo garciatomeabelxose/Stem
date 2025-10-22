@@ -1,0 +1,8 @@
+<script>
+  let numeros = [5, 10, 15, 20];
+  let temporal = numeros.shift();
+  numeros.unshift(numeros[numeros.length-1]);
+  numeros.push(temporal);
+  console.log(numeros);
+  
+</script>
