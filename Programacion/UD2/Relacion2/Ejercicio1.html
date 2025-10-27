@@ -1,0 +1,48 @@
+<script>
+
+    let temperaturaSemana = []
+    let temperaturaMax = 0
+    let temperaturaMin = 100
+    let temperaturaPromedio
+    const NUMEROSEMANA = 7
+    let operadorWhile = 0
+    let sumaTemperatura = 0
+
+
+
+    for (let i = 0; i < NUMEROSEMANA; i++) {
+        temperaturaSemana[i] = Number(prompt("Introduce la temperatura del dia:" + (i + 1)))
+    }
+    console.log(temperaturaSemana);
+
+    while (operadorWhile != 4) {
+        operadorWhile = Number(prompt("Menú de opciones [ 1: Temperatura Alta | 2: Temperatura Baja | 3: Temperatura Media | 4: Salir ]"))
+
+        if (operadorWhile == 1) {
+            for (let i = 0; i < temperaturaSemana.length; i++) {
+                if (temperaturaMax < temperaturaSemana[i]) { temperaturaMax = temperaturaSemana[i] }
+
+            }
+            console.log("La temperatura más alta de la semana es: " + temperaturaMax);
+        }
+        if (operadorWhile == 2) {
+            for (let i = 0; i < temperaturaSemana.length; i++) {
+                if (temperaturaMin > temperaturaSemana[i]) { temperaturaMin = temperaturaSemana[i] }
+
+            }
+            console.log("La temperatura más baja de la semana es: " + temperaturaMin);
+        }
+        if (operadorWhile == 3) {
+
+            for (let i = 0; i < temperaturaSemana.length; i++) {
+                sumaTemperatura += temperaturaSemana[i]
+
+            }
+            temperaturaPromedio = sumaTemperatura / NUMEROSEMANA
+            temperaturaPromedio.toFixed
+            console.log("la temperatura media de la semana es: " + temperaturaPromedio);
+
+        }
+
+    }
+</script>
