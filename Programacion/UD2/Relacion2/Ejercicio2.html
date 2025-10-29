@@ -1,0 +1,24 @@
+<script>
+    let nombreJugadores = ["Pedro", "Mario", "Lucas", "Lucía", "Marcos"]
+    let puntuacionJugador = [10, 20, 15, 17, 21]
+    let opciones = 0
+    while (opciones != 3) {
+        opciones = prompt("Menú de opciones | 1. Añadir jugador y puntuación | 2. Mostrar los jugadores y sus puntuaciones | 3. Cerrar el programa");
+        if (opciones == 1) {
+            nombreJugadores.shift()
+            puntuacionJugador.shift()
+            nombreJugadores.push(prompt("Introduce el nombre del jugador"))
+            puntuacionJugador.push(prompt("introduce la puntuación del jugador"))
+        }
+        if (opciones == 2) {
+            for (let i = 0; i < nombreJugadores.length; i++) {
+                console.log("- " + nombreJugadores[i] + ": " + puntuacionJugador[i]);
+
+
+            }
+        }
+    }
+
+
+
+</script>
