@@ -1,0 +1,22 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #b5f4ff;
+  color: black;
+  align-items: center;
+  
+}
+.nav{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+    
+}
+.titulo{
+margin-left: 20px;
+}
+.enlaceInicio{
+    color: black;
+}
