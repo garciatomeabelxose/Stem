@@ -17,3 +17,24 @@ h2 {
 }
 
 /* Ejercicio 4 */
+
+.flex-container {
+display: flex;
+
+}
+.flex-item-flex-1{
+flex: 1 1 auto;
+ background-color: #665a5a;
+}
+.flex-item-flex-2{
+flex: 2 1 150px;
+ background-color: #ff0000;
+}
+.flex-item-flex-3{
+flex: 1 0 100px;
+ background-color: #000000;
+}
+.flex-item-flex-4{
+flex: 0 1 200px;
+ background-color: #1100ff;
+}
