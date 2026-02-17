@@ -1,7 +1,6 @@
 package Programacion.UD5.Relacion2.Ejercicio2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Biblioteca {
 
@@ -12,36 +11,51 @@ public class Biblioteca {
     }
 
     public void agregarLibro(Libro libro) {
-        this.listado.add(libro);
+        if (!listado.contains(libro)) {
+            this.listado.add(libro);
+        }
     }
+
     public String mostrarTodosLibros() {
         String lista = "";
         for (Libro libro : listado) {
-            lista += "\n"+libro.getTitulo();
+            lista += "\n" + libro.getTitulo();
         }
         return lista;
     }
-     public String mostrarTodosLibrosCompletos() {
+
+    public String mostrarTodosLibrosCompletos() {
         String lista = "";
         for (Libro libro : listado) {
-            lista += " || "+libro;
+            lista += " || " + libro;
         }
         return lista;
     }
-    public Libro prestarLibro(int idLibroAPrestar,Biblioteca listado,int id, boolean disponibilidad){
-        
+
+    // Devuelve el libro si lo encuentra o null en el otro caso
+    public Libro buscarLibro(String titulo) {
         Libro libroEncontrado = null;
         for (Libro libro : listado) {
-            if(.equals(id)){
-                libroEncontrado = libro.disponibilidad;
+            if (libro.getTitulo().equals(titulo)) {
+                libroEncontrado = libro;
             }
         }
         return libroEncontrado;
 
-        
-
-
     }
-    
 
+    public boolean prestar(Libro libro) {
+        boolean prestamoDisponible = libro.getDisponible();
+        if (prestamoDisponible) {
+            libro.setDisponible(false);
+        }
+        return prestamoDisponible;
+    }
+    public boolean devolver(Libro libro) {
+        boolean prestamoDisponible = libro.getDisponible();
+        if (!prestamoDisponible) {
+            libro.setDisponible(true);
+        }
+        return prestamoDisponible;
+    }
 }

@@ -23,17 +23,29 @@ public class Libro {
     public String getTitulo() {
         return titulo;
     }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
     public int getId() {
         return id;
     }
-    public boolean getDispo(){
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean getDisponible() {
         return disponible;
     }
-    public void setDispo() {
-        
-        if (this.disponible) {
-            disponible = false;
-           
-        }
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
     }
+
+    public String getSinopsis(){
+        return sinopsis;
+    }
+    public  void setSinopsis(String sinopsis) {
+        this.sinopsis = sinopsis;
+    }
+
 }
